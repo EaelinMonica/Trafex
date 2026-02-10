@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trafex Landing</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #e5e5e5;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    background: #f5f5f5;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Top bar */
+.top-bar {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.top-bar span {
+    border: 1px solid white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #f5f5f5;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-dot {
+    width: 18px;
+    height: 18px;
+    background: black;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-outline {
+    background: white;
+    border: 1px solid #ccc;
+}
+
+.btn-dark {
+    background: black;
+    color: white;
+}
+
+.btn-light {
+    background: #e0e0e0;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 40px;
+    gap: 40px;
+}
+
+.hero-left h1 {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #111;
+}
+
+/* Toggle inside heading */
+.toggle {
+    display: inline-block;
+    width: 70px;
+    height: 36px;
+    background: #ccc;
+    border-radius: 20px;
+    position: relative;
+    vertical-align: middle;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.toggle-circle {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    transition: 0.3s;
+}
+
+.toggle.active {
+    background: #333;
+}
+
+.toggle.active .toggle-circle {
+    left: 36px;
+}
+
+/* Hero right */
+.hero-right {
+    max-width: 350px;
+}
+
+.hero-right p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Image Section */
+.image-section {
+    display: flex;
+    gap: 20px;
+    padding: 0 40px 40px;
+}
+
+.image-box {
+    flex: 1;
+    height: 320px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay card */
+.overlay-card {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+/* Hover effects */
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left h1 {
+        font-size: 42px;
+    }
+
+    .image-section {
+        flex-direction: column;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        Take a quick tour experience how simple it is to manage a global network of contractors with Trafex compliantly
+        <span>Learn more</span>
+    </div>
+    
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <div class="logo-dot"></div>
+            trafex
+        </div>
+
+        <div class="nav-links">
+            <a href="platform.html">Platform</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="resources.html">Resources</a>
+            <a href="pricing.html">Pricing</a>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="login.html">
+        <button class="btn btn-outline">Login</button>
+            </a>
+            <button class="btn btn-dark">Get started</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-left">
+            <h1>
+                Onboard,
+                <span class="toggle" id="toggle">
+                    <span class="toggle-circle"></span>
+                </span>
+                <br>
+                manage and pay
+            </h1>
+        </div>
+
+        <div class="hero-right">
+            <p>
+                Hiring talent abroad? Get with the market leader in contractor management.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-dark">Get Started</button>
+                <button class="btn btn-light"><a href="demo.html" class="btn">Demo</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Section -->
+    <section class="image-section">
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4" alt="UI">
+            <div class="overlay-card">
+                Salaries +8.2%<br>
+                R$440,120
+            </div>
+        </div>
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Team">
+            <div class="overlay-card">
+                invoice-710 — $370.00<br>
+                invoice-711 — $210.00
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script>
+/* Toggle switch interaction */
+const toggle = document.getElementById("toggle");
+
+toggle.addEventListener("click", () => {
+    toggle.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
